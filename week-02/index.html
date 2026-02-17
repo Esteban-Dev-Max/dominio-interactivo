@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestor de Trazabilidad Agrícola</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main class="container">
+    <h1>🌱 Gestor de Lotes Agrícolas</h1>
+
+    <!-- FORMULARIO -->
+    <form id="lotForm">
+      <input type="text" id="name" placeholder="Nombre del lote" required>
+      <input type="text" id="description" placeholder="Descripción">
+      <input type="text" id="farm" placeholder="Finca">
+      <input type="text" id="region" placeholder="Región">
+      <input type="number" id="harvestKg" placeholder="Producción (kg)">
+      <input type="number" step="0.1" id="qualityScore" placeholder="Calidad">
+
+      <select id="category">
+        <option value="">Tipo de cultivo</option>
+        <option value="coffee">Café</option>
+        <option value="cacao">Cacao</option>
+        <option value="corn">Maíz</option>
+      </select>
+
+      <select id="priority">
+        <option value="">Prioridad</option>
+        <option value="low">Baja</option>
+        <option value="medium">Media</option>
+        <option value="high">Alta</option>
+      </select>
+
+      <button type="submit">Guardar Lote</button>
+    </form>
+
+    <!-- FILTROS -->
+    <section class="filters">
+      <select id="statusFilter">
+        <option value="all">Todos</option>
+        <option value="active">En Producción</option>
+        <option value="inactive">Inactivos</option>
+      </select>
+
+      <select id="categoryFilter">
+        <option value="">Todas las categorías</option>
+        <option value="coffee">Café</option>
+        <option value="cacao">Cacao</option>
+        <option value="corn">Maíz</option>
+      </select>
+
+      <select id="priorityFilter">
+        <option value="">Todas las prioridades</option>
+        <option value="low">Baja</option>
+        <option value="medium">Media</option>
+        <option value="high">Alta</option>
+      </select>
+
+      <input type="text" id="searchInput" placeholder="Buscar lote...">
+    </section>
+
+    <section id="stats"></section>
+    <section id="list"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
