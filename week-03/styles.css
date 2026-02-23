@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7f4;
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  background: #2d6a4f;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.controls, .filters {
+  margin-top: 20px;
+}
+
+form input, form select, form button {
+  padding: 8px;
+  margin: 5px;
+}
+
+button {
+  background: #40916c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1b4332;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: white;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.inactive {
+  opacity: 0.5;
+}

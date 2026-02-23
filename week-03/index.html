@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Agricultural Traceability System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>🌱 Agricultural Traceability System</h1>
+  <div id="stats"></div>
+</header>
+
+<section class="controls">
+  <h2>Create Item</h2>
+  <form id="itemForm">
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="text" id="location" placeholder="Location" required>
+
+    <select id="type">
+      <option value="CropBatch">Crop Batch</option>
+      <option value="FertilizerApplication">Fertilizer Application</option>
+      <option value="PestControlRecord">Pest Control</option>
+    </select>
+
+    <input type="text" id="extra" placeholder="Extra data (depends on type)" required>
+
+    <button type="submit">Add</button>
+  </form>
+</section>
+
+<section class="filters">
+  <input type="text" id="search" placeholder="Search by name">
+  <select id="filterType">
+    <option value="all">All Types</option>
+    <option value="CropBatch">Crop Batch</option>
+    <option value="FertilizerApplication">Fertilizer</option>
+    <option value="PestControlRecord">Pest Control</option>
+  </select>
+</section>
+
+<section>
+  <ul id="itemList"></ul>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
