@@ -1,0 +1,40 @@
+<script type="module" src="./starter/main.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AgroTrace Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1 id="app-title"></h1>
+  <button id="reports-btn">Load Reports</button>
+</header>
+
+<section>
+  <form id="entity-form">
+    <input type="text" name="name" placeholder="Crop Name" required>
+    <input type="number" name="quantity" placeholder="Quantity (kg)" required>
+    
+    <select name="category">
+      <option value="crop">Crop</option>
+      <option value="fertilizer">Fertilizer</option>
+      <option value="pest">Pest Control</option>
+    </select>
+
+    <button type="submit">Save</button>
+  </form>
+</section>
+
+<section>
+  <input type="text" id="search" placeholder="Search...">
+  <ul id="entity-list"></ul>
+</section>
+
+<section id="report-container"></section>
+
+<script type="module" src="./starter/main.js"></script>
+</body>
+</html>
